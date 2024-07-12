@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Generate a <span>random password</span></h1>
+            <h3>Never use an unsecure password again.</h3>
+            <form>
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" name="length" min="1" max="30"><br></br>
+                <div class="check">
+                    <label for="num">Include Numbers:</label>
+                    <input type="checkbox" id="num" name="num"><br></br>
+                </div>
+                <div class="check">
+                    <label for="num">Include Symbols:</label>
+                    <input type="checkbox" id="symbol" name="symbol">
+                </div>
+            </form>
+            <button id="btn">Generate Passwords</button>
+            <div class="container">
+                <div class="output" id="out1"></div>
+                <div class="output" id="out2"></div>
+            </div>
+            <p id="bruh"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
